@@ -1,0 +1,188 @@
+.boy_4_ball {
+	width:790px;
+	height: 530px;
+	border: 2px solid black;
+	margin: 0 auto;
+	background: url("../image/circuis.jpg");
+}
+
+.body_boy {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.head_boy {
+	width: 106px;
+	height: 122px;
+	border: 2px solid black;
+	border-radius: 123px/115px;
+	margin-top: 40px;
+	margin-left: 346px;
+}
+
+.trapeze_boy {
+	width: 195px;
+	height: 240px;
+	transform: perspective(10px) rotateX(-1deg);
+	border: 2px solid black;
+	position: relative;
+	top:58px;
+	left: 53px;
+}
+
+.hand_arm_left  {
+	width: 155px;
+	height: 0;
+	border: 1px solid black;
+	margin-top: -218px;
+	transform-origin: 100%;
+	margin-left: -128px;
+	animation: hand_arm 1s linear infinite;
+}
+
+@keyframes hand_arm {
+
+	0% { transform: rotate(-95deg);
+	}
+	25%,40% { transform: rotate(-90deg);
+	}
+	45% { transform: rotate(-85deg);
+	}
+	60% { transform: rotate(-85deg);
+	}
+	80% { transform: rotate(-95deg)
+	}
+	100% { transform: rotate(-95deg);}
+}
+
+.hand_brush_left {
+	width: 85px;
+	border: 1px solid black;
+	transform-origin: 0;
+	animation: brush_left 1s linear infinite;
+	animation-delay: 0.29s;
+}
+
+@keyframes brush_left {
+	0% {
+		transform: rotate(90deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	50% { transform: rotate(-90deg)}
+
+	75%{
+		transform: rotate(-180deg);
+	}
+	100% {
+		transform: rotate(-250deg);
+	}
+}
+
+.hand_arm_right {
+	width: 155px;
+	height: 0;
+	border: 1px solid black;
+	margin-top: 0;
+	transform-origin: 100%;
+	margin-left: 121px;
+	transform: rotate(300grad);
+	animation: hand_arm 1s linear infinite; ;
+	}
+
+.hand_brush_right {
+	width: 85px;
+	border: 1px solid black;
+	transform-origin: 0;
+	animation: hand_brush_right 1s linear infinite;
+
+}
+
+@keyframes hand_brush_right {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: red;
+}
+
+.animation_circle_left_one {
+	animation: circle_left 2s linear infinite;
+}
+
+@keyframes circle_left {
+	0%    {transform:translate(5px,200px);
+	}
+	12.5% {transform: translate(98px,129px);
+	}
+	25% {transform: translate(107px,-27px);
+	}
+	37.5% {transform: translate(85px,-138px) ;
+	}
+	50% {transform: translate(3px,-213px) ;
+	}
+	62.5% {transform: translate(-81px,-138px) ;
+	}
+	75% {transform: translate(-100px,-26px) ;
+	}
+	87.5% {transform: translate(-90px,116px) ;
+	}
+	100% {transform:translate(5px,200px) ;
+	}
+}
+
+.animation_circle_left_two {
+	animation: circle_left 2s linear infinite;
+	animation-delay: 1s;
+}
+
+.animation_circle_right_one {
+	animation: circle_right 2s linear infinite;
+	animation-delay: 0.5s;
+	}
+
+@keyframes circle_right {
+	0%    {transform:translate(255px,102px);
+	}
+	12.5% {transform: translate(171px,30px);
+	}
+	25% {transform: translate(155px,-128px);
+	}
+	37.5% {transform: translate(194px,-218px);
+	}
+	50% {transform: translate(251px,-294px) ;
+	}
+	62.5% {transform: translate(335px,-227px);
+	}
+	75% {transform: translate(347px,-127px);
+	}
+	87.5% {transform: translate(341px,33px);
+	}
+	100% {transform:translate(255px,102px) ;
+	}
+}
+
+.animation_circle_right_two {
+	animation: circle_right 2s linear infinite;
+	animation-delay: 1.6s;
+}
